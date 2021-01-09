@@ -26,3 +26,19 @@ def rabies(request):
 
 def diseas_library(request):
     return render(request, 'blog/diseas_library.html')
+
+
+def commoncold(request):
+    return render(request, 'blog/commoncold.html')
+
+
+def h1n1(request):
+    return render(request, 'blog/h1n1.html')
+
+
+def hepatitisa(request):
+    return render(request, 'blog/hepatitisa.html')
+
+
+def hepatitisb(request):
+    return render(request, 'blog/hepatitisb.html')

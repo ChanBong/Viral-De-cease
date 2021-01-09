@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Viral De-cease|Swine Flu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="{% static 'blog/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/HOMEPAGE.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/diseases.css' %}"/>
+</head>
+
+<body background="{% static 'blog/dark2.jpg' %}">
+    <audio width="300" autoplay loop>
+      <source src="{% static 'blog/codm.mp3' %}" type="audio/mp3">
+    </audio>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="nav1">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" href="{% url 'blog-home' %}">
+            <img src="{% static 'blog/LOGO.jpeg' %}" width=50px height="30" class="d-inline-block align-top" alt=""> Viral De-cease
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent navigation">
+            <ul class="navbar-nav mr-auto profile-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog-home' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jane</a>
+                </li>
+                <li class="nav-item active">
+            <a class="nav-link active" data-trigger="dropdown" href="{% url 'diseas_library' %}">Disease Library</a>
+            <ul class="profile-submenu submenu">
+              <li class="drop active"><a href="{% url 'covid' %}">COVID-19</a></li>
+              <li class="drop"><a href="{% url 'aids' %}">AIDS</a></li>
+              <li class="drop"><a href="{% url 'rabies' %}">Rabies</a></li>
+              <li class="drop"><a href="{% url 'diseas_library' %}">View More</a></li>
+            </ul>
+          </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <img class="dis-image" src="{% static 'blog/h1n1.jpg' %}" align="right" height=300px width=500px/>
+    <article class="dis-article">
+        <h1><u>Swine Flu H1N1</u></h1><br/>
+        <p>Swine flu, also known as 2009 H1N1 type A influenza, is a human disease. People get the disease from other people, not from pigs. The disease originally was nicknamed swine flu because the virus that causes the disease originally jumped to humans
+            from the live pigs in which it evolved. The virus is a "reassortant" -- a mix of genes from swine, bird, and human flu viruses. Scientists are still arguing about what the virus should be called, but most people know it as the H1N1 swine flu
+            virus
+
+            <ul>
+                <li>
+                    <h3><u>Sign and Symptoms</u></h3>
+                </li>
+                Symptoms of H1N1 swine flu are like regular flu symptoms and include fever, cough, sore throat, runny nose, body aches, headache, chills, and fatigue. Many people with swine flu have had diarrhea and vomiting. But these symptoms can also be caused by
+                many other conditions. That means that you and your doctor can't know, just based on your symptoms Like seasonal flu, pandemic swine flu can cause neurologic symptoms in children. These events are rare, but, as cases associated with seasonal
+                flu have shown, they can be very severe and often fatal. Symptoms include seizures or changes in mental status (confusion or sudden cognitive or behavioral changes). It's not clear why these symptoms occur, although they may be caused
+                by Reye's syndrome. Reye's syndrome usually occurs in children with a viral illness who have taken aspirin -- something that should always be avoided.
+
+                <br/><br/>
+            </ul>
+    </article>
+    <center>
+        <div><a href="https://www.cdc.gov/h1n1flu/general_info.htm">FOR MORE INFORMATION, CLICK HERE</a></div>
+    </center><br/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{% static 'blog/HOMEPAGE.js' %}"></script>

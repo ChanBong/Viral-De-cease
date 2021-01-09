@@ -1,0 +1,86 @@
+{% url 'blog-home' %}{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Viral De-cease|Hepatitis B</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="{% static 'blog/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/HOMEPAGE.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/diseases.css' %}"/>
+</head>
+
+<body background="{% static 'blog/dark2.jpg' %}">
+    <audio width="300" autoplay loop>
+      <source src="{% static 'blog/codm.mp3' %}" type="audio/mp3">
+    </audio>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="nav1">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" href="{% url 'blog-home' %}">
+            <img src="{% static 'blog/LOGO.jpeg' %}" width=50px height="30" class="d-inline-block align-top" alt=""> Viral De-cease
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent navigation">
+            <ul class="navbar-nav mr-auto profile-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'blog-home' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Jane</a>
+                </li>
+                <li class="nav-item active">
+            <a class="nav-link active" data-trigger="dropdown" href="{% url 'diseas_library' %}">Disease Library</a>
+            <ul class="profile-submenu submenu">
+              <li class="drop active"><a href="{% url 'covid' %}">COVID-19</a></li>
+              <li class="drop"><a href="{% url 'aids' %}">AIDS</a></li>
+              <li class="drop"><a href="{% url 'rabies' %}">Rabies</a></li>
+              <li class="drop"><a href="{% url 'diseas_library' %}">View More</a></li>
+            </ul>
+          </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <img class="dis-image" src="{% static 'blog/hepatitisb.png' %}" align="right" height=300px width=500px/>
+    <article class="dis-article">
+        <h1><u>Hepatitis B</u></h1><br/>
+        <p>Hepatitis B is an infectious disease caused by the hepatitis B virus (HBV) that affects the liver;[1][7] it is a type of viral hepatitis.[8] It can cause both acute and chronic infection.[1] Many people have no symptoms during the initial infection.
+            In acute infection, some may develop a rapid onset of sickness with vomiting, yellowish skin, tiredness, dark urine, and abdominal pain. Often these symptoms last a few weeks and rarely does the initial infection result in death.The virus
+            is transmitted by exposure to infectious blood or body fluids. Infection around the time of birth or from contact with other people's blood during childhood is the most frequent method by which hepatitis B is acquired in areas where the disease
+            is common. The infection has been preventable by vaccination since 1982.Vaccination is recommended by the World Health Organization in the first day of life if possible.
+            <ul>
+                <li>
+                    <h3><u>Sign and Symptoms</u></h3>
+                </li>
+                Acute infection with hepatitis B virus is associated with acute viral hepatitis, an illness that begins with general ill-health, loss of appetite, nausea, vomiting, body aches, mild fever, and dark urine, and then progresses to development of jaundice.
+                The illness lasts for a few weeks and then gradually improves in most affected people. A few people may have a more severe form of liver disease known as fulminant hepatic failure and may die as a result. The infection may be entirely
+                asymptomatic and may go unrecognized.[16]
+                <br/><br/>
+                <li>
+                    <h3><u>Transmission</u></h3>
+                </li>
+                Transmission of hepatitis B virus results from exposure to infectious blood or body fluids containing blood. It is 50 to 100 times more infectious than human immunodeficiency virus (HIV).[27] Possible forms of transmission include sexual contact,blood
+                transfusions and transfusion with other human blood products,re-use of contaminated needles and syringes, and vertical transmission from mother to child (MTCT) during childbirth. Without intervention, a mother who is positive for HBsAg
+                has a 20% risk of passing the infection to her offspring at the time of birth. This risk is as high as 90% if the mother is also positive for HBeAg. HBV can be transmitted between family members within households, possibly by contact of
+                nonintact skin or mucous membrane with secretions or saliva containing HBV.However, at least 30% of reported hepatitis B among adults cannot be associated with an identifiable risk factor.[32] Breastfeeding after proper immunoprophylaxis
+                does not appear to contribute to mother-to-child-transmission (MTCT) of HBV.[33] The virus may be detected within 30 to 60 days after infection and can persist and develop into chronic hepatitis B. The incubation period of the hepatitis
+                B virus is 75 days on average but can vary from 30 to 180 days.[34]
+                <br/><br/>
+            </ul>
+    </article>
+    <center>
+        <div><a href="https://www.cdc.gov/hepatitis/hbv/index.htm">FOR MORE INFORMATION, CLICK HERE</a></div>
+    </center><br/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{% static 'blog/HOMEPAGE.js' %}"></script>

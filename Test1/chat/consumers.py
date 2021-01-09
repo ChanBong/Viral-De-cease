@@ -6,6 +6,7 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 def call_chatbot(UserInput, iteration):
     UserInput = UserInput.lower()
     import datetime
+    from . import Viral_diseases
     #import speech_recoginition as sr
     #import pyttsx3
     import random
@@ -26,8 +27,10 @@ def call_chatbot(UserInput, iteration):
     wait_for_response = []
     dis_found = ""
     ###############
+    wait = 0
 
     def response(y):
+        wait = 0
         return (y + "\n")
 
     def response_commit(data):
@@ -267,7 +270,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         message = text_data_json['message']
         iteration_no = self.iteration_no
         bot_reply = call_chatbot(message, iteration_no)
-        iteration_no += 1
+        self.iteration_no += 1
         # Send message to room group
         await self.channel_layer.group_send(
             self.room_group_name,
