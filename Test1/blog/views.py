@@ -102,9 +102,8 @@ def external(request):
     flag = 1
 
     while (flag == 1):
-        a = input().lower()
-        About_Jane(a)
-        about_disease(a)
+        About_Jane(inp)
+        about_disease(inp)
         for l in bye_list:
             if l in a:
                 response("See ya soon!")
