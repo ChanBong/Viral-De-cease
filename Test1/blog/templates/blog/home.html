@@ -1,6 +1,39 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <h1>
-        Blog Home !
-    </h1>
+    <header>
+      <article id="left-dropdown" class="boxinfo">
+        <div class="box">
+          <h5>Welcome</h5><br/>
+          <h5><a href="{% url 'chatbot' %}">About Jane</a></h5><br/>
+          <h5><a href="#">Latest News</a></h5>
+        </div>
+      </article>
+      <article id="intro" class="boxinfo">
+        <div class="box">
+          Since 195 innovative railroad maintenance equipment, ahelp you achieve operational excellence, extend rail and rolling asset life and enhance efficiency to new levels. oday’s maintenance equipment is both highly capable and highly complex. In many cases, improper or ineffective use of the complex equipment provided by Loram can cause situations just as worrisome as those found on the rail prior to the investment. To avoid causing damage and maximize the return on your investment, Loram recommends the use of our experts to reinforce your operating staff. Program management specialists can provide program-level recommendations for the use of your equipment. Our specialists can assist you in determining the work cycles for your equipment, how the equipment can best interact with other maintenance activities, and what the goal of the maintenance activity should be.
+        </div>
+      </article>
+    </header>
+    <br/>
+    <article id="about-jane" class="box-border">
+      <h4><center>ABOUT JANE</center></h4>
+      <p id="aboutj">
+        Today’s maintenance equipment is both highly capable and highly complex. In many cases, improper or ineffective use of the complex equipment provided by Loram can cause situations just as worrisome as those found on the rail prior to the investment. To avoid causing damage and maximize the return on your investment, Loram recommends the use of our experts to reinforce your operating staff.
+    </article>
+    <article class="box-border" id="news">
+      <h4><center>LATEST NEWS</center></h4>
+      <ul>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+        <li>NEWS 1</li>
+      </ul>
+    </article>
 {% endblock content %}

@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for dis in diseases %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ dis.name }}</a>
+              <small>{{ dis.symptoms }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ dis.about_l }}</a></h2>
+            <p class="article-content">{{ dis.site }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

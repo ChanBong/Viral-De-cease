@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  color: #bbb;
+}
+.submenu {
+  display: none;
+
+}
+.submenu.active {
+  display: block;
+}
+.submenu a{
+  color: #aaa;
+}
+.drop:hover {
+  box-shadow: 2px 2px 2px #aaa
+}
+#left-dropdown{
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 3px solid #000;
+    width: 25%;
+    border-radius: 15px;
+    text-align: center;
+    float:left;
+    border-color:#bbb;
+    background-color: rgba(160, 160, 160, 0.45);
+}
+#left-dropdown a{
+  color:#bbb;
+}
+#intro{
+  margin-top:30px;
+  float: right;
+  width:60%;
+  margin-right: 50px;
+  font-weight: 600 !important;
+  border: 3px solid #000;
+  border-radius: 15px;
+  border-spacing: 15px;
+  border-color:#bbb;
+  background-color: rgba(160, 160, 160, 0.45);
+}
+.box, #aboutj {
+  margin:15px;
+}
+.boxinfo:hover, .box-border:hover {
+  box-shadow: 5px 10px 20px 10px rgba(240,240,240, 0.3);
+}
+.boxinfo, .box-border {
+  transition: box-shadow 600ms;
+}
+#about-jane {
+  margin-top: 300px;
+  margin-right:200px;
+  margin-left:200px;
+}
+.box-border {
+  border: 3px solid #000;
+  border-radius: 15px;
+  border-spacing: 15px;
+  border-color:#bbb;
+  background-color: rgba(160, 160, 160, 0.45);
+}
+#news {
+  margin-top:30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom:30px;
+}
+#nav1 {
+  position: fixed;
+  width:100%
+
+}
+header {
+  padding-top: 50px;
+}
