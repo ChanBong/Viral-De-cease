@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <h1>
+        ChatBot
+    </h1>
+    <dir>
+        <form action="/chatbot/talk" method="post">
+            {% csrf_token %}
+            Input text:
+                <input type="text" name="param" required><br><br>
+                {{ data_external }} <br><br>
+                {{ data1 }} <br><br>
+                <input type="submit" value="Execute external pyhton script">
+            }
+
+        </form>
+
+    </dir>
+{% endblock content %}
