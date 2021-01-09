@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Viral De-cease|COVID-19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="{% static 'blog/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/HOMEPAGE.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/diseases.css' %}"/>
+  </head>
+  <body background="{% static 'blog/dark2.jpg' %}">
+    <audio width="300" autoplay loop>
+      <source src="{% static 'blog/codm.mp3' %}" type="audio/mp3">
+    </audio>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="nav1">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="HOMEPAGE.html">
+        <img src="{% static 'blog/LOGO.jpeg' %}" width=50px height="30" class="d-inline-block align-top" alt="">
+        Viral De-cease
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent navigation">
+        <ul class="navbar-nav mr-auto profile-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog-home' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jane</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" data-trigger="dropdown" href="{% url 'diseas_library' %}">Disease Library</a>
+            <ul class="profile-submenu submenu">
+              <li class="drop active"><a href="{% url 'covid' %}">COVID-19</a></li>
+              <li class="drop"><a href="{% url 'aids' %}">AIDS</a></li>
+              <li class="drop"><a href="{% url 'rabies' %}">Rabies</a></li>
+              <li class="drop"><a href="{% url 'diseas_library' %}">View More</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <img class="dis-image" src="{% static 'blog/COVID19.jpg' %}" align="right" height=300px width=500px/>
+    <article class="dis-article">
+      <h1><u>COVID-19</u></h1><br/>
+      <p>Coronavirus disease 2019 (COVID-19) is a contagious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The first case was identified in Wuhan, China, in December 2019. It has since spread worldwide, leading to an ongoing pandemic.Symptoms of COVID-19 are variable, but often include fever, cough, fatigue, breathing difficulties, and loss of smell and taste. The virus that causes COVID-19 spreads mainly when an infected person is in close contact[a] with another person. Small droplets and aerosols containing the virus can spread from an infected person's nose and mouth as they breathe, cough, sneeze, sing, or speak.Although work is underway to develop drugs that inhibit the virus, the primary treatment is currently symptomatic. Management involves the treatment of symptoms, supportive care, isolation, and experimental measures.
+      <ul>
+        <li><h3><u>Sign and Symptoms</u></h3></li>
+        Symptoms of COVID-19 are variable, ranging from mild symptoms to severe illness. Common symptoms include headache, loss of smell and taste, nasal congestion and rhinorrhea, cough, muscle pain, sore throat, fever and breathing difficulties. People with the same infection may have different symptoms, and their symptoms may change over time. In people without prior ears, nose, and throat disorders, loss of taste combined with loss of smell is associated with COVID-19 with a specificity of 95%.<br/><br/>
+        Most people (81%) develop mild to moderate symptoms (up to mild pneumonia), while 14% develop severe symptoms (dyspnea, hypoxia, or more than 50% lung involvement on imaging) and 5% of patients suffer critical symptoms (respiratory failure, shock, or multiorgan dysfunction). Around one in five people are infected with the virus but do not develop noticeable symptoms at any point in time. These asymptomatic carriers tend not to get tested, and they can spread the disease. Other infected people will develop symptoms later (called pre-symptomatic) or have very mild symptoms, and can also spread the virus.<br/><br/>
+        As is common with infections, there is a delay, known as the incubation period, between the moment a person first becomes infected and the appearance of the first symptoms. The median incubation period for COVID-19 is four to five days. Most symptomatic people experience symptoms within two to seven days after exposure, and almost all symptomatic people will experience one or more symptoms before day twelve.<br/><br/>
+        <li><h3><u>Transmission</u></h3></li>
+        COVID-19 spreads from person to person mainly through the respiratory route after an infected person coughs, sneezes, sings, talks or breathes. A new infection occurs when virus-containing particles exhaled by an infected person, either respiratory droplets or aerosols, get into the mouth, nose, or eyes of other people who are in close contact with the infected person. During human-to-human transmission, an average 1000 infectious SARS-CoV-2 virions are thought to initiate a new infection.<br/><br/>
+        The closer people interact, and the longer they interact, the more likely they are to transmit COVID-19. Closer distances can involve larger droplets (which fall to the ground) and aerosols, whereas longer distances only involve aerosols. The larger droplets may also evaporate into the aerosols (known as droplet nuclei). The relative importance of the larger droplets and the aerosols is not clear as of November 2020, however the virus is not known to transmit between rooms over long distances such as through air ducts. Airborne transmission is able to particularly occur indoors, in high risk locations, such as in restaurants, choirs, gyms, nightclubs, offices, and religious venues, often when they are crowded or less ventilated. It also occurs in healthcare settings, often when aerosol-generating medical procedures are performed on COVID-19 patients.<br/><br/>
+        <li><h3><u>About the Virus</u></h3></li>
+        Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is a novel severe acute respiratory syndrome coronavirus. It was first isolated from three people with pneumonia connected to the cluster of acute respiratory illness cases in Wuhan. All features of the novel SARS-CoV-2 virus occur in related coronaviruses in nature.
+        <br/><br/>
+        Outside the human body, the virus is destroyed by household soap, which bursts its protective bubble.<br/><br/>
+        <li><h3><u>Prevention</u></h3></li>
+        Preventive measures to reduce the chances of infection include staying at home, wearing a mask in public, avoiding crowded places, keeping distance from others, ventilating indoor spaces, washing hands with soap and water often and for at least 20 seconds, practising good respiratory hygiene, and avoiding touching the eyes, nose, or mouth with unwashed hands. Those diagnosed with COVID-19 or who believe they may be infected are advised by the CDC to stay home except to get medical care, call ahead before visiting a healthcare provider, wear a face mask before entering the healthcare provider's office and when in any room or vehicle with another person, cover coughs and sneezes with a tissue, regularly wash hands with soap and water and avoid sharing personal household items.
+      </ul>
+    </article>
+    <center><div><a href="https://www.cdc.gov/coronavirus/2019-nCoV/index.html">FOR MORE INFORMATION, CLICK HERE</a></div></center><br/>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="{% static 'blog/HOMEPAGE.js' %}"></script>

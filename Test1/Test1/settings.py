@@ -35,12 +35,14 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'diseases.apps.DiseasesConfig',
     'crispy_forms',
+    'chat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +74,15 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Test1.wsgi.application'
+ASGI_APPLICATION = "Test1.asgi.application"
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
 
 
 # Database

@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Viral De-cease|ABOUT US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="{% static 'blog/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/HOMEPAGE.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/AboutUs.css' %}">
+  </head>
+  <body background="{% static 'blog/dark2.jpg' %}">
+    <audio width="300" autoplay loop>
+      <source src="{% static 'blog/codm.mp3' %}" type="audio/mp3">
+    </audio>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="nav1">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="HOMEPAGE.html">
+        <img src="{% static 'blog/LOGO.jpeg' %}" width=50px height="30" class="d-inline-block align-top" alt="">
+        Viral De-cease
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent navigation">
+        <ul class="navbar-nav mr-auto profile-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog-home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jane</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" data-trigger="dropdown" href="{% url 'diseas_library' %}">Disease Library</a>
+            <ul class="profile-submenu submenu">
+              <li class="drop"><a href="{% url 'covid' %}">COVID-19</a></li>
+              <li class="drop"><a href="{% url 'aids' %}">AIDS</a></li>
+              <li class="drop"><a href="{% url 'rabies' %}">Rabies</a></li>
+              <li class="drop"><a href="{% url 'diseas_library' %}">View More</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'about' %}">About Us <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <header>
+    <article id="aboutusbox"><center>
+      <div class="LOGO" style="background:url({% static 'blog/LOGO.jpeg' %})"></div>
+      <h4><u>ABOUT US</u></h4>
+      Creators:</center>
+        <ul id="creators">
+          <li>Arjun Angrishi</li>
+          <li>Sanjeet Manna</li>
+          <li>Aryan Ranjan</li>
+          <li>Harsh Kumar</li>
+        </ul>
+    </article>
+    <article id="aboutus">
+      <h3><center>ABOUT US</h3></center>
+      <p> During the ongoing COVID 19 pandemic, the world is on a standstill.This shows the impact a 100nm long object can have on the whole Earth .Humans who boost about being the most pwerful creature ,
+          the unanswerable authority is shown its place by the nature.However it can't stop us from sympathising for the victims. So we , the team Algo Nukes wanted to do something for the ones who are
+          threatenend by viruses. So we come up with the idea of Viral De-Cease , A one-stop website for finding stuff about Viral Diseases. Soon we will  expand it to Bacterial and Fungal Diseases too.
+
+      <p><h4>Web framework and programming language used:</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>JQUERY</li>
+          <li>PYTHON</li>
+          <li>DJANGO</li>
+        </ul>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="{% static 'blog/HOMEPAGE.js' %}"></script>
+  </body>
+</html>

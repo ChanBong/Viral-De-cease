@@ -1,0 +1,40 @@
+.LOGO {
+  width:200px;
+  height:200px;
+  align: center;
+
+}
+#aboutusbox {
+  width: 300px;
+  display: inline-block;
+  float: right;
+  margin-right: 80px;
+  padding-top: 80px;
+  transition: box-shadow 600ms;
+}
+#aboutusbox h4{
+  margin-top: 20px;
+}
+#aboutus {
+  margin-left: 50px;
+  margin-top: 80px;
+  border:none;
+  width: 60%;
+  border-radius: 15px;
+  text-align: center;
+  float:left;
+  border-color:#bbb;
+  background-color: rgba(160, 160, 160, 0.45);
+  transition: box-shadow 600ms;
+
+}
+#aboutus h3{
+  margin-top: 15px;
+}
+#aboutus p{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#creators {
+  margin-left: auto;
+}
