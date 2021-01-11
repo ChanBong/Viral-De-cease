@@ -9,6 +9,16 @@ from django.views.generic import (
 )
 
 
+def searchproduct(request):
+    if request.method == "POST":
+        query_name = request.POST.get('name', None)
+        if query_name:
+            results = Diseas.objects.filter(name__contains=query_name)
+            return render(request, 'diseases/productsearch.html', {"results": results})
+
+    return render(request, 'diseases/productsearch.html')
+
+
 def home(request):
     context = {
         'diseas': Diseas.objects.all()

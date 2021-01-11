@@ -70,9 +70,12 @@
 
         chatSocket.onmessage = function(e) {
             const data = JSON.parse(e.data);
+            var msg = new SpeechSynthesisUtterance();
+            msg.text =data.message;
             if (data.message=="redirect")
               window.open("http://localhost:8000/diseas_library/");
             document.querySelector('#chat-log').value += (data.message + '\n');
+            window.speechSynthesis.speak(msg);
         };
 
         chatSocket.onclose = function(e) {

@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from users import views as user_views
+from diseases import views as dis_views
 from django.contrib.auth import views as auth_views
 
 
@@ -27,4 +28,5 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('diseas/', include('diseases.urls')),
     path('chat/', include('chat.urls')),
+    path('search/', dis_views.searchproduct, name='productsearch'),
 ]

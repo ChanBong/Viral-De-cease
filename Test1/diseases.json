@@ -1,0 +1,37 @@
+[
+  {
+    "name":"covid",
+    "site":"https://www.cdc.gov/coronavirus/2019-nCoV/index.html",
+    "about_s":"Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.",
+  },
+  {
+    "name":"aids",
+    "site":"https://www.cdc.gov/hiv/default.html",
+    "about_s":"HIV stands for human immunodeficiency virus. It weakens a person’s immune system by destroying important cells that fight disease and infection. There is currently no effective cure for HIV.",
+  },
+  {
+    "name":"commoncold",
+    "site":"https://www.cdc.gov/features/rhinoviruses/index.html",
+    "about_s":"Common cold can be caused by many different types of viruses. The condition is generally harmless and symptoms usually resolve within two weeks.",
+  },
+  {
+    "name":"hepatitisa",
+    "site":"https://www.cdc.gov/hepatitis/hav/index.htm",
+    "about_s":"Hepatitis A is a highly contagious, short-term liver infection caused by the Hepatitis A virus.",
+  },
+  {
+    "name":"hepatitisb",
+    "site":"https://www.cdc.gov/hepatitis/hbv/index.htm",
+    "about_s":"Hepatitis B is a vaccine-preventable liver infection caused by the Hepatitis B virus.",
+  },
+  {
+    "name":"rabies",
+    "site":"https://www.cdc.gov/rabies/index.html",
+    "about_s":"Rabies is a preventable viral disease most often transmitted through the bite of a rabid animal. The rabies virus infects the central nervous system of mammals, ultimately causing disease in the brain and death.",
+  },
+  {
+    "name":"h1n1",
+    "site":"https://www.cdc.gov/h1n1flu/general_info.htm",
+    "about_s":"Swine flu, also known as the H1N1 virus, is a relatively new strain of an influenza virus that causes symptoms similar to the regular flu.",
+  },
+]
