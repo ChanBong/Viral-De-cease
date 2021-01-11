@@ -1,8 +1,8 @@
 # Viral-De-cease           
 
-This website was made during the SDS [Syntax Error 2021.](https://hackathon.sdslabs.co/) and was selected in 1top 10 from 150+ submissions     
+This website was made during the SDS [Syntax Error 2021.](https://hackathon.sdslabs.co/) and was selected in top 10 from 150+ submissions     
 It is a one-stop site for viral diseases with a powerful chatbot    
-The site was made using [Django framework]()    
+The site was made using [Django framework](https://docs.djangoproject.com/en/3.1/)    
 
 # To run this :     
   1. Clone the repo    
